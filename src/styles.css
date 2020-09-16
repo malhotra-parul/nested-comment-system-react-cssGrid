@@ -1,0 +1,75 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.comment {
+  width: 800px;
+}
+
+.comment-box {
+  padding: 10px 20px;
+  border: 1px solid hotpink;
+  text-align: left;
+  display: grid;
+  grid-template-rows: repeat(auto, 1fr);
+  grid-template-columns: 4fr 1fr;
+  grid-gap: 0.2em;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.author {
+  color: black;
+  padding-bottom: 10px;
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  grid-row: 1;
+  grid-column: 2/3;
+}
+
+.edit {
+  padding: 0.5em;
+}
+
+.delete {
+  padding: 0.5em;
+}
+.content {
+  padding: 10px 0;
+  grid-row: 2;
+  grid-column: 1/-1;
+}
+
+.reply {
+  grid-column: 1;
+  justify-self: center;
+  grid-row: 3;
+  align-self: center;
+}
+
+.toggle {
+  grid-column: 1;
+  grid-row: 5;
+  justify-self: center;
+}
+
+.child {
+  width: 100%;
+  grid-column: 1/-1;
+  grid-row: auto;
+}
+
+.textarea{
+  grid-row: 4;
+  grid-column: 1/-1; 
+}
